@@ -57,7 +57,12 @@ console.log(`Corrected New Distance: ${newDistanceInKm.toFixed(2)} km`); //10000
 console.log(`Corrected Remaining Fuel: ${remainingFuel.toExponential} kg`); //3,200 kg after correction.
 
 
+//Error Handling
+if (acc > 20) {
+  throw new Error('Acceleration too high. Ensure the unit of measurement is in m/s^2!');
+}
 
-
-
+if (vel > 30000) {
+  throw new Error ('Velocity too high. Ensure the unit of measurement is in km/h!');
+}
 
