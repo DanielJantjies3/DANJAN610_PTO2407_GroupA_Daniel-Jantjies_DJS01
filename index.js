@@ -18,6 +18,11 @@ const d2 = d + (vel*time) //calcultes new distance
 const rf = fbr*time //calculates remaining fuel
 const vel2 = calcNewVel(acc, vel, time) //calculates new velocity based on acceleration
 
+//Unit Conversion (Velocity from km/h to m/s)
+const velInMs = vel * (1000 / 3600); 
+
+
+
 // Pick up an error with how the function below is called and make it robust to such errors
 calcNewVel = (vel, acc, time) => { 
   return vel + (acc*time)
