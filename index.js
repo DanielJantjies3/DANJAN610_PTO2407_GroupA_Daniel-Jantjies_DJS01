@@ -22,6 +22,26 @@ const vel2 = calcNewVel(acc, vel, time) //calculates new velocity based on accel
 const velInMs = vel * (1000 / 3600); 
 
 
+//Calculate New Velocity with Unit Conversion (m/s)
+const calcNewVel = (velInMs, acc, time) => {
+  return velInMs + (acc * time);   //velocity after acceleration
+};
+
+
+//Calculate New Distance With Unit Conversion (Meters) 
+//Kinematic Equation for Calculating Distance : d = v0 * t + 0.5 * a * t^2
+const calcNewDistance = (velInMs, acc, time) => {
+  return (velInMs * time) + (0.5 * acc * Math.pow(time, 2));
+};
+
+
+//Calculate Remaining Fuel
+const calcRemainingFuel = (fuel , fbr , time) => {
+  return fuel - (fbr * time);
+};
+
+
+
 
 // Pick up an error with how the function below is called and make it robust to such errors
 calcNewVel = (vel, acc, time) => { 
