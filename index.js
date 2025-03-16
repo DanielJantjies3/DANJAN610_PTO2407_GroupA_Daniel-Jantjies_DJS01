@@ -54,7 +54,7 @@ const remainingFuel = calcRemainingFuel(fuel, fbr, time);
 //Output Results
 console.log(`Corrected New Velocity: ${newVelInKmH.toFixed(2)} km/h`); //48880 km/h after correction
 console.log(`Corrected New Distance: ${newDistanceInKm.toFixed(2)} km`); //10000 km after correction.
-console.log(`Corrected Remaining Fuel: ${remainingFuel.toExponential} kg`); //3,200 kg after correction.
+console.log(`Corrected Remaining Fuel: ${remainingFuel.toFixed(2)} kg`); //3,200 kg after correction.
 
 
 //Error Handling
