@@ -51,7 +51,7 @@ const newVelInKmH = newVelInMs * (3600/1000);
 const remainingFuel = calcRemainingFuel(fuel, fbr, time);
 
 
-
+//Output Results
 console.log(`Corrected New Velocity: ${vel2} km/h`);
 console.log(`Corrected New Distance: ${d2} km`);
 console.log(`Corrected Remaining Fuel: ${rf} kg`);
